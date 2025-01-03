@@ -57,7 +57,10 @@ flutter:
   assets:
     - assets/illustration/
     - assets/icon/
+    - assets/icon/Flags.png
+    - assets/icon/akun.png
     - assets/fonts/
+    - assets/promo/
   fonts:
     - family: SFProText
       fonts:

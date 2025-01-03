@@ -2,7 +2,7 @@ import 'dart:ui';
 
 class TypographCol {
   // Headings
-  static TextStyle h1 = TextStyle(
+  static final TextStyle h1 = TextStyle(
     fontWeight: FontWeight.w600, // Semibold
     fontSize: 30.0,
   );

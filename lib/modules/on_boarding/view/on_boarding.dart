@@ -1,7 +1,9 @@
 import 'package:cots_2211104022_gideon/design_system/styles/app_color.dart';
 import 'package:cots_2211104022_gideon/design_system/styles/image_col.dart';
+import 'package:cots_2211104022_gideon/modules/on_boarding/controller/on_boarding_controller.dart';
 import 'package:cots_2211104022_gideon/modules/on_boarding/widgets/content.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({Key? key}) : super(key: key);
@@ -12,6 +14,7 @@ class OnboardingScreen extends StatefulWidget {
 
 class _OnboardingScreenState extends State<OnboardingScreen> {
   final PageController _pageController = PageController();
+  final OnboardingController controller = Get.put(OnboardingController());
   int _currentPage = 0;
 
   final List<OnboardingContent> _contents = [
@@ -35,17 +38,18 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         automaticallyImplyLeading: false,
         toolbarHeight: 60,
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.white,
         elevation: 0, 
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Image.asset(
               AppImages.gojekLogo,
-              height: 40,
+              height: 25,
             ),
             Image.asset(
               AppImages.language,
@@ -128,7 +132,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                           ),
                           onPressed: () {
                             if (_currentPage == _contents.length - 1) {
-                              // Aksi jika halaman terakhir
+                              controller.navigateToLogin();
                             } else {
                               _pageController.nextPage(
                                 duration: const Duration(milliseconds: 300),
@@ -157,7 +161,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             ),
                           ),
                           onPressed: () {
-                            // Aksi tombol Lewati
+                            
                           },
                           child: const Text(
                             'Belum ada akun?, Daftar dulu',
