@@ -1,16 +1,16 @@
 # cots_2211104022_gideon
 
-A new Flutter project.
+On Boarding:
+<div>
+    <img src="assets/ss/onBoarding.png" alt="SS">
+</div>
 
-## Getting Started
+Login:
+<div>
+    <img src="assets/ss/login.png" alt="SS">
+</div>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Main:
+<div>
+    <img src="assets/ss/main.png" alt="SS">
+</div>
