@@ -30,6 +30,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  get: ^4.6.6
+  flutter_onboarding_slider: ^1.0.11
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -52,6 +54,20 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  assets:
+    - assets/illustration/
+    - assets/icon/
+    - assets/fonts/
+  fonts:
+    - family: SFProText
+      fonts:
+        - asset: assets/fonts/SF-Pro-Text-Regular.otf
+        - asset: assets/fonts/SF-Pro-Text-Bold.otf
+          weight: 700
+        - asset: assets/fonts/SF-Pro-Text-Medium.otf
+          weight: 500
+        - asset: assets/fonts/SF-Pro-Text-Light.otf
+          weight: 300
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
